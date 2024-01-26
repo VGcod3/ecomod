@@ -1,0 +1,19 @@
+.wrapper {
+    @apply w-full h-[75vh] mx-auto max-w-7xl grid grid-cols-4 md:grid-rows-3 grid-rows-4;
+}
+
+.slogan_item {
+    @apply flex items-center gap-2;
+
+    p {
+        @apply text-neutral-100 text-xl;
+    }
+
+    img {
+        @apply lg:h-12 lg:w-12 w-8 h-8 ml-3 md:m-0;
+    }
+}
+
+.button {
+    @apply md:py-[1.4vw] py-4 px-2 md:px-[1.6vw] bg-neutral-200 rounded-lg text-xl h-fit leading-none lg:w-auto w-full;
+}
