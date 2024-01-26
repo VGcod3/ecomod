@@ -62,7 +62,7 @@ export default function Drawer({
                             transition={{ duration: 0.2 }}
                             className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-neutral-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-200/10"
                         >
-                            <div>
+                            <div className='h-full'>
                                 <div className="flex items-center justify-between">
                                     <Dialog.Close asChild>
                                         <button
@@ -75,9 +75,9 @@ export default function Drawer({
                                         </button>
                                     </Dialog.Close>
                                 </div>
-                                <div className="mt-6 flow-root">
-                                    <div className="-my-6 divide-y divide-gray-500/10">
-                                        <div className="space-y-2 py-6 border-b-neutral-100 border-b">
+                                <div className="mt-6 flow-root flex-col h-full">
+                                    <div className="-my-6 divide-y divide-neutral-200/20 flex flex-col h-full justify-between">
+                                        <div className="space-y-2 py-6">
 
                                             {navigation.map((item) => (
                                                 <span
@@ -86,7 +86,7 @@ export default function Drawer({
                                                         handleScrollClick(item.href)
                                                     }}
                                                     key={item.name}
-                                                    className={` cursor-pointer transition-all -mx-3 block px-3 py-2 text-lg text-center font-semibold leading-7 text-gray-200 hover:bg-bec-darker rounded`}
+                                                    className={`cursor-pointer transition-all -mx-3 block px-3 py-2 text-lg text-center font-semibold leading-7 text-gray-200 hover:text-my-cyan rounded`}
                                                 >
                                                     {item.name}
                                                 </span>
