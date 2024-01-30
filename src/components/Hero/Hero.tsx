@@ -23,7 +23,7 @@ const Hero = () => (
                 </p>
             </div>
 
-            <div className="col-span-4 sm:col-span-2 w-full h-full p-10 order-last sm:order-none flex flex-col lg:flex-row items-center gap-6 row-span-1">
+            <div className="col-span-4 sm:col-span-2 w-full h-full p-6 order-last sm:order-none flex flex-col lg:flex-row items-center gap-6 row-span-1">
                 <button className={style.button}>Замовити дзвінок</button>
                 <button style={{ backgroundColor: 'transparent' }} className={`${style.button}  text-neutral-100`}>Переглянути планування</button>
             </div>

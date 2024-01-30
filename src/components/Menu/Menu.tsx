@@ -2,14 +2,14 @@
 import Image from "next/image";
 import { useState } from "react";
 import useSmoothScrollTo from '@/utils/useSmoothScrollTo';
-import { HamburgerMenuIcon } from '@radix-ui/react-icons';
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 
 import { FaPhone, FaInstagram, FaSquareFacebook } from "react-icons/fa6";
 
-
 import Drawer from "@/components/Drawer";
 
-import * as Dialog from '@radix-ui/react-dialog';
+
+import * as Dialog from "@radix-ui/react-dialog";
 
 
 import './Menu.scss';

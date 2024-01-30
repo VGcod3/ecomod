@@ -1,5 +1,5 @@
 import { useLoader } from '@react-three/fiber'
-import { OBJLoader, GLTFLoader, MTLLoader } from "three-stdlib";
+import { OBJLoader, MTLLoader } from "three-stdlib";
 
 
 const ModelOfHouse = () => {
@@ -9,12 +9,6 @@ const ModelOfHouse = () => {
         materials.preload();
         loader.setMaterials(materials);
     });
-
-    // const model = useLoader(OBJLoader, '/model.obj');
-
-    // const model = useLoader(GLTFLoader, '/model.gltf')
-
-    console.log(model);
 
     return (
         <primitive object={model} />
