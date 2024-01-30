@@ -55,7 +55,7 @@ const Comp = ({ link, title, description, className }: PointType) => (
 
 const WhyUs = () => (
    <div className="flex flex-col min-h-screen w-full align-middle mt-20 justify-center relative">
-      <h1 className=" text-neutral-100 w-full text-center text-4xl font-medium lg:absolute top-40">ЧОМУ МИ</h1>
+      <h1 className=" text-neutral-100 w-full text-center text-4xl font-medium mb-10 lg:mb-28">ЧОМУ МИ</h1>
       <div className="flex lg:flex-row flex-col gap-8 h-full">
          <div className="flex flex-col justify-evenly bg-white rounded-3xl lg:rounded-r-none lg:rounded-l-3xl p-8 md:p-12  m-6 lg:m-0 col-span-12 lg:order-2 flex-1">
             <p>Найбільше ми цінуємо комфорт, безпеку та швидкість. Саме це основи сучасного стрімкого життя.
