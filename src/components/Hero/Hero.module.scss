@@ -15,5 +15,5 @@
 }
 
 .button {
-    @apply border-2 border-neutral-100 md:py-[1.4vw] py-4 px-2 md:px-[1.6vw] bg-neutral-200 rounded-lg text-xl h-fit leading-none lg:w-auto w-full;
+    @apply border-2 border-neutral-100 md:py-[1.4vw] py-4 px-2 md:px-[1.6vw] bg-neutral-200 rounded-lg text-xl h-fit leading-none lg:w-auto w-full transition-all duration-500 hover:scale-105;
 }
