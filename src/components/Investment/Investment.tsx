@@ -1,12 +1,14 @@
 import Image from "next/image";
 
 const Investment = () => (
-    <div className="grid col-span-4 lg:grid-cols-6 gap-16 p-10 lg:p-0">
-        <div className="flex gap-4 flex-col flex-grow my-20 col-span-4">
+    <div className="grid col-span-4 lg:grid-cols-6 gap-x-16 p-10 lg:p-0">
+        <h2 className="col-span-4 lg:col-span-6 text-neutral-100 w-full text-center text-4xl font-medium lg:hidd en">Для вашого бізнесу</h2>
+
+        <div className="flex gap-4 flex-col flex-grow my-16 col-span-4">
             <div className="bg-white lg:rounded-l-none flex flex-col justify-center gap-4 rounded-3xl min-h-80 p-10 lg:pl-48">
-                <h1 className="text-3xl font-bold mb-6">
+                <h3 className="text-3xl font-bold mb-6">
                     ECOMOD  - це впершу чергу про розумні інвестиції.
-                </h1>
+                </h3>
                 <p>
                     Ви не витрачаєте часу та сил на облаштування будинку. Наші майстри та дизайнери повністю беруть на себе цю відповідальність!
                 </p>
