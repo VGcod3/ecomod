@@ -26,7 +26,7 @@ const SwiperWrapper = ({
     }
 
     useEffect(() => {
-        handleChangeSlide(1);
+        handleChangeSlide(0);
     }, [])
 
     return <>
