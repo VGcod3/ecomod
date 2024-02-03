@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         'my-cyan': '#7EFFFF',
-        'my-bg': '#121212'
+        'my-bg': '#121212',
+        'my-label': '#95A1BB'
       }
     },
   },
