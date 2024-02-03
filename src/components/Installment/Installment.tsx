@@ -2,7 +2,7 @@
 import ModuleSwiper from '@/components/ModuleSwiper'
 
 
-const Installment = () => {
+const PlanPhotos = () => {
 
    const paths = ['/Installment/img1.jpeg', '/Installment/img2.jpeg', '/Installment/img3.jpeg', '/Installment/img4.jpeg', '/Installment/img5.jpeg']
 
@@ -21,4 +21,4 @@ const Installment = () => {
    )
 }
 
-export default Installment;
+export default PlanPhotos;

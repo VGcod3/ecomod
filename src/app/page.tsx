@@ -7,16 +7,20 @@ import InnerPlanning from '@/components/InnerPlanning';
 import Investment from "@/components/Investment";
 import Installment from "@/components/Installment";
 import Advantages from "@/components/Advantages";
+import PlanPhotos from "@/components/PlanPhotos";
+import FAQ from "@/components/FAQ";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Advantages />
-      <InnerPlanning />
       <WhyUs />
+      <InnerPlanning />
       <Investment />
+      <PlanPhotos />
       <Installment />
+      <FAQ />
       <div className="fixed -z-10">
         <ParticlesBackground />
       </div>
