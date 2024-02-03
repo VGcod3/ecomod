@@ -102,9 +102,7 @@ export default function Drawer({
 
                                             <FaPhone className="social" />
 
-
                                         </div>
-
 
                                     </div>
                                 </div>

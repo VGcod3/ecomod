@@ -5,7 +5,7 @@ const Investment = () => (
         <h2 className="col-span-4 lg:col-span-6 text-neutral-100 w-full text-center text-4xl font-medium lg:hidd en">Для вашого бізнесу</h2>
 
         <div className="flex gap-4 flex-col flex-grow my-16 col-span-4">
-            <div className="bg-white lg:rounded-l-none flex flex-col justify-center gap-4 rounded-3xl min-h-80 p-10 lg:pl-48">
+            <div className="bg-neutral-100 lg:rounded-l-none flex flex-col justify-center gap-4 rounded-3xl min-h-80 p-10 lg:pl-48">
                 <h3 className="text-3xl font-bold mb-6">
                     ECOMOD  - це впершу чергу про розумні інвестиції.
                 </h3>

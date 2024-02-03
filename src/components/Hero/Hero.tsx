@@ -12,7 +12,7 @@ const Hero = () => (
         <section className={style.wrapper}>
             <div className="col-span-2 row-span-2 w-full overflow-visible">
                 {/* <Scene /> */}
-                <Image src="/heroImage.png" alt="hero image module house" width={1214} height={703} className="absolute right-1/2 w-full h-full sm:h-1/2 object-contain object-right-top " />
+                <Image src="/heroImage.png" alt="hero image module house" width={1214} height={703} className="absolute z-0 right-1/2 w-full h-full sm:h-1/2 object-contain object-right-top pointer-events-none" />
             </div>
 
             <div className="col-span-4 sm:order-none order-first sm:col-span-2 w-full h-full p-10 flex flex-col justify-center sm:items-start items-center sm:row-span-2">
