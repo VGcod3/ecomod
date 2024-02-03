@@ -31,7 +31,7 @@ const SwiperWrapper = ({
 
     return <>
         <ModuleSwiper pathsToImages={pathsToImages} activeSlide={activeSlide} swiper={swiper} setSwiper={setSwiper} setActiveSlide={setActiveSlide} />;
-        <div className="flex gap-1 mx-auto items-center mt-6">
+        <div className="flex gap-1 mx-auto items-center mb-6">
             <button onClick={() => handleChangeSlide((activeSlide - 1))}>
                 <img src="/swiperArrow.svg" alt="arrow" className="px-3" />
             </button>

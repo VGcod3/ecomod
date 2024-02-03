@@ -41,11 +41,11 @@ const AccordionItem = ({ children, value }: { children: ReactElement[], value: s
 const AccordionTrigger = ({ heading }: { heading: string }) => (
    <Accordion.Header className="flex">
       <Accordion.Trigger
-         className={`text-neutral-100  group flex p-8 flex-1 text-left justify-between px-5 text-2xl leading-none outline-none`}
+         className={`text-neutral-100  group flex p-8 flex-1 text-left items-center justify-between text-2xl leading-none outline-none`}
       >
          {heading}
          <ChevronDownIcon
-            className="w-10 h-10 text-my-cyan group-data-[state=open]:text-neutral-700 group-data-[state=open]:bg-my-cyan bg-neutral-700 p-2 rounded-full ease-[cubic-bezier(0.87,_0,_0.13,_1)] transition-transform duration-300 group-data-[state=open]:rotate-180"
+            className="w-10 h-10 min-w-10 text-my-cyan group-data-[state=open]:text-neutral-700 group-data-[state=open]:bg-my-cyan bg-neutral-700 p-2 rounded-full ease-[cubic-bezier(0.87,_0,_0.13,_1)] transition-transform duration-300 group-data-[state=open]:rotate-180"
             aria-hidden
          />
       </Accordion.Trigger>
@@ -54,7 +54,7 @@ const AccordionTrigger = ({ heading }: { heading: string }) => (
 
 const AccordionContent = ({ description }: { description: string }) => (
    <Accordion.Content
-      className={`font-light text-neutral-400 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp text-md h-32 px-6`}
+      className={`font-light text-neutral-400 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp text-md h-32 px-8`}
    >
       <span className="h-full w-full flex align-middle items-center">
          {description}
