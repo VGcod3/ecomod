@@ -1,8 +1,6 @@
 import AnimationWrapper from "@/components/Animations/AnimationWrapper";
 import Image from "next/image";
 import Video from "next-video";
-import winter from "/videos/winter.mp4";
-import lake from "/videos/lake.mp4";
 import { SwiperSlide } from "swiper/react";
 import ModuleSwiper from "../ModuleSwiper";
 
@@ -30,14 +28,14 @@ const Projects = () => {
         <>
           <SwiperSlide>
             <Video
-              src={winter}
+              src={"/winter.mp4"}
               accentColor="#7EFFFF"
               className="rounded-3xl w-full h-full  object-cover border-4 border-my-bg"
             />
           </SwiperSlide>
           <SwiperSlide>
             <Video
-              src={lake}
+              src={"/lake.mp4"}
               accentColor="#7EFFFF"
               className="rounded-3xl w-full h-full  object-cover border-4 border-my-bg"
             />
