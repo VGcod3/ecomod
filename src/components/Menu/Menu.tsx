@@ -68,7 +68,7 @@ const Menu = () => {
 
         <FaInstagram className="social" />
 
-        <Link href="tel:+380993298431">
+        <Link href="tel:+380969588195">
           <FaPhone className="social" />
         </Link>
       </section>
