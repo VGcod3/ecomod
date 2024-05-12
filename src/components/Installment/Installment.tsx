@@ -5,11 +5,11 @@ import Image from "next/image";
 
 const PlanPhotos = () => {
   const paths = [
-    "/Installment/img1.jpeg",
-    "/Installment/img2.jpeg",
-    "/Installment/img3.jpeg",
-    "/Installment/img4.jpeg",
-    "/Installment/img5.jpeg",
+    "/Installment/img2.jpg",
+    "/Installment/img3.jpg",
+    "/Installment/img5.jpg",
+    "/Installment/img4.jpg",
+    "/Installment/img1.jpg",
   ];
 
   return (
