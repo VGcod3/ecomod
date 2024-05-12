@@ -37,7 +37,7 @@ const Projects = () => {
             <Video
               src={"/lake.mp4"}
               accentColor="#7EFFFF"
-              className="rounded-3xl w-full h-full  object-cover border-4 border-my-bg"
+              className="rounded-3xl w-full h-full object-cover border-4 border-my-bg"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -46,7 +46,7 @@ const Projects = () => {
               width={864}
               height={650}
               alt="slider image"
-              className="rounded-3xl w-full h-full  object-cover border-4 border-my-bg"
+              className="rounded-3xl w-full h-full object-cover border-4 border-my-bg"
             />
           </SwiperSlide>
         </>
