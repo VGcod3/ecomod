@@ -64,9 +64,13 @@ const Menu = () => {
       </nav>
 
       <section className="hidden lg:flex gap-14">
-        <FaSquareFacebook className="social" />
+        <Link href="https://www.facebook.com/profile.php?id=100064137518618&locale=uk_UA">
+          <FaSquareFacebook className="social" />
+        </Link>
 
-        <FaInstagram className="social" />
+        <Link href="https://www.instagram.com/modul_dim?igsh=MTN0NDVteHMzcHowZw==">
+          <FaInstagram className="social" />
+        </Link>
 
         <Link href="tel:+380969588195">
           <FaPhone className="social" />
