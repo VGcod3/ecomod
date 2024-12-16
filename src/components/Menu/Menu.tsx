@@ -82,8 +82,8 @@ const Menu = () => {
         <Link href="tel:+380669913454">
           <FaPhone className="social" />
         </Link>
-        <Link href={`${locale === "ua" ? "en" : "ua"}`}>
-          <Globe className="social" />
+        <Link href={`${locale === "ua" ? "en" : "ua"}`} className="text-2xl">
+          {locale === "ua" ? "UA" : "EN"}
         </Link>
       </section>
 

@@ -109,8 +109,11 @@ export default function Drawer({
                         <FaPhone className="social" />
                       </Link>
 
-                      <Link href={`${locale === "ua" ? "en" : "ua"}`}>
-                        <Globe className="social" />
+                      <Link
+                        href={`${locale === "ua" ? "en" : "ua"}`}
+                        className="text-2xl"
+                      >
+                        {locale === "ua" ? "UA" : "EN"}
                       </Link>
                     </div>
                   </div>
