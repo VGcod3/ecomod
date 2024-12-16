@@ -1,29 +1,11 @@
 import Image from "next/image";
 import AnimationWrapper from "../Animations/AnimationWrapper";
+import { useTranslations } from "next-intl";
 
 type advatageType = {
   text: string;
   className?: string;
 };
-
-const advantages: advatageType[] = [
-  {
-    text: "жодних лишніх деталей. максимум простоти та комфорту",
-    className: "top-12 -left-48 order-first",
-  },
-  {
-    text: "якісні довговічні  матеріали, які не бояться жодної негоди",
-    className: "top-12 -right-48 order-first",
-  },
-  {
-    text: "мобільність модуля, яка дозволятиме легко змінити місце розташування",
-    className: "bottom-12 -left-48",
-  },
-  {
-    text: "затишне місце для життя та відпочинку з краєвидом на Ваш вибір",
-    className: "bottom-12 -right-48",
-  },
-];
 
 const AdvantageCard = ({ text, className }: advatageType) => {
   return (
@@ -38,32 +20,55 @@ const AdvantageCard = ({ text, className }: advatageType) => {
   );
 };
 
-const Advantages = () => (
-  <div
-    className="flex flex-col min-h-screen mx-auto max-w-2xl w-full align-middle mt-20 justify-center p-6 gap-10 lg:gap-28"
-    id="advantages"
-  >
-    <AnimationWrapper duration={0.4} animationType="fadeIn">
-      <h1 className=" text-neutral-100 uppercase w-full text-center text-4xl font-medium order-first ">
-        Переваги модульного дому
-      </h1>
-    </AnimationWrapper>
+const Advantages = () => {
+  const t = useTranslations();
 
-    <div className="flex flex-col gap-4 relative">
-      <AnimationWrapper duration={0.4} animationType="zoomIn">
-        <Image
-          alt={"advantages image"}
-          src={"/advantage.png"}
-          className={"max-w-2xl mx-auto w-full"}
-          width={628}
-          height={503}
-        />
+  const advantages: advatageType[] = [
+    {
+      text: t("advantages.list.0"),
+      className: "top-12 -left-48 order-first",
+    },
+    {
+      text: t("advantages.list.1"),
+      className: "top-12 -right-48 order-first",
+    },
+    {
+      text: t("advantages.list.2"),
+      className: "bottom-12 -left-48",
+    },
+    {
+      text: t("advantages.list.3"),
+      className: "bottom-12 -right-48",
+    },
+  ];
+
+  return (
+    <div
+      className="flex flex-col min-h-screen mx-auto max-w-2xl w-full align-middle mt-20 justify-center p-6 gap-10 lg:gap-28"
+      id="advantages"
+    >
+      <AnimationWrapper duration={0.4} animationType="fadeIn">
+        <h1 className=" text-neutral-100 uppercase w-full text-center text-4xl font-medium order-first ">
+          {t("advantages.title")}
+        </h1>
       </AnimationWrapper>
-      {advantages.map((adv) => (
-        <AdvantageCard text={adv.text} className={adv.className} />
-      ))}
+
+      <div className="flex flex-col gap-4 relative">
+        <AnimationWrapper duration={0.4} animationType="zoomIn">
+          <Image
+            alt={"advantages image"}
+            src={"/advantage.png"}
+            className={"max-w-2xl mx-auto w-full"}
+            width={628}
+            height={503}
+          />
+        </AnimationWrapper>
+        {advantages.map((adv) => (
+          <AdvantageCard text={adv.text} className={adv.className} />
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Advantages;

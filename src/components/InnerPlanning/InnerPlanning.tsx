@@ -2,6 +2,7 @@ import ModuleSwiper from "@/components/ModuleSwiper";
 import AnimationWrapper from "@/components/Animations/AnimationWrapper";
 import { SwiperSlide } from "swiper/react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const InnerPlanning = () => {
   const paths = [
@@ -12,6 +13,8 @@ const InnerPlanning = () => {
     "/interior/photo5.jpg",
   ];
 
+  const t = useTranslations();
+
   return (
     <div
       className="flex flex-col min-h-screen w-full align-middle mt-20 justify-center relative gap-8"
@@ -19,14 +22,12 @@ const InnerPlanning = () => {
     >
       <AnimationWrapper duration={0.2} animationType="slideUp" delay={0.2}>
         <h1 className=" text-neutral-100 w-full text-center text-4xl font-medium">
-          Внутрішнє планування
+          {t("inner.title")}
         </h1>
       </AnimationWrapper>
       <AnimationWrapper duration={0.4} animationType="fadeIn" delay={0.5}>
         <p className="max-w-5xl mx-auto w-full text-my-label text-center p-4">
-          Основне, що створює затишну атмосферу в домі - його інтер’єр. Наші
-          будинки виконані в стилі люкс та створені для максимального комфорту
-          та функціональності в кожному сантиметрі.
+          {t("inner.description")}
         </p>
       </AnimationWrapper>
       <ModuleSwiper numberOfSlides={paths.length}>

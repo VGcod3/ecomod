@@ -7,7 +7,9 @@ import * as Dialog from "@radix-ui/react-dialog";
 import useSmoothScrollTo from "@/utils/useSmoothScrollTo";
 
 import { FaPhone, FaInstagram, FaSquareFacebook } from "react-icons/fa6";
-import { Link } from "lucide-react";
+import Link from "next/link";
+import { Globe } from "lucide-react";
+import { useLocale } from "next-intl";
 
 interface drawerProps {
   mobileMenuOpen: boolean;
@@ -40,6 +42,8 @@ export default function Drawer({
       document.body.style.overflow = "auto";
     };
   }, [mobileMenuOpen]);
+
+  const locale = useLocale();
 
   return (
     <Dialog.Portal>
@@ -103,6 +107,10 @@ export default function Drawer({
 
                       <Link href="tel:+380969588195">
                         <FaPhone className="social" />
+                      </Link>
+
+                      <Link href={`${locale === "ua" ? "en" : "ua"}`}>
+                        <Globe className="social" />
                       </Link>
                     </div>
                   </div>

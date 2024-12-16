@@ -11,33 +11,40 @@ import Drawer from "@/components/Drawer";
 import * as Dialog from "@radix-ui/react-dialog";
 
 import "./Menu.scss";
-import Link from "next/link";
+
+import { useTranslations, useLocale } from "next-intl";
+import { Globe } from "lucide-react";
+import { Link } from "@/i18n/routing";
 
 type MenuItem = {
   name: string;
   href: string;
 };
 
-const navigation: MenuItem[] = [
-  {
-    name: "Чому ми",
-    href: "#whyUs",
-  },
-  {
-    name: "Планування",
-    href: "#innerPlanning",
-  },
-  {
-    name: "Для бізнесу",
-    href: "#investment",
-  },
-  {
-    name: "FAQ",
-    href: "#faq",
-  },
-];
-
 const Menu = () => {
+  const t = useTranslations();
+
+  const locale = useLocale();
+
+  const navigation: MenuItem[] = [
+    {
+      name: t("nav.whyUs"),
+      href: "#whyUs",
+    },
+    {
+      name: t("nav.planning"),
+      href: "#innerPlanning",
+    },
+    {
+      name: t("nav.forBusiness"),
+      href: "#investment",
+    },
+    {
+      name: "FAQ",
+      href: "#faq",
+    },
+  ];
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleScrollClick = useSmoothScrollTo();
@@ -74,6 +81,9 @@ const Menu = () => {
 
         <Link href="tel:+380969588195">
           <FaPhone className="social" />
+        </Link>
+        <Link href={`${locale === "ua" ? "en" : "ua"}`}>
+          <Globe className="social" />
         </Link>
       </section>
 

@@ -3,8 +3,11 @@ import Image from "next/image";
 import Video from "next-video";
 import { SwiperSlide } from "swiper/react";
 import ModuleSwiper from "../ModuleSwiper";
+import { useTranslations } from "next-intl";
 
 const Projects = () => {
+  const t = useTranslations("projects");
+
   return (
     <div
       className="flex flex-col min-h-screen w-full align-middle mt-20 justify-center relative gap-8"
@@ -12,15 +15,12 @@ const Projects = () => {
     >
       <AnimationWrapper duration={0.2} animationType="slideUp" delay={0.2}>
         <h1 className=" text-neutral-100 w-full text-center text-4xl font-medium">
-          Проєкти
+          {t("title")}
         </h1>
       </AnimationWrapper>
       <AnimationWrapper duration={0.4} animationType="fadeIn" delay={0.5}>
         <p className="max-w-5xl mx-auto w-full text-my-label text-center p-4">
-          Повністю готові будинки надають змогу легко створити комплекс у
-          будь-якій точці України. Саме це дозволяє швидко розпочати власну
-          справу. Готельний бізнес, комплекс будинків або ж будь-який інший
-          проєкт стає ближчим та доступнішим з ECOMOD.
+          {t("description")}
         </p>
       </AnimationWrapper>
 

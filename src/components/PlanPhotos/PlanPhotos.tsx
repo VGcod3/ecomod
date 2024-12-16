@@ -1,5 +1,6 @@
 import Image from "next/image";
 import AnimationWrapper from "../Animations/AnimationWrapper";
+import { useTranslations } from "next-intl";
 
 const PlanPhotos = () => {
   const paths = [
@@ -11,6 +12,8 @@ const PlanPhotos = () => {
     "/PlanPhotos/plan-6.png",
   ];
 
+  const t = useTranslations();
+
   return (
     <div
       className="flex flex-col min-h-screen w-full align-middle mt-20 justify-center relative gap-8"
@@ -18,7 +21,7 @@ const PlanPhotos = () => {
     >
       <AnimationWrapper duration={0.4} animationType="slideUp" delay={0.2}>
         <h1 className=" text-neutral-100 w-full text-center text-4xl font-medium">
-          Фото планування
+          {t("planning")}
         </h1>
       </AnimationWrapper>
 

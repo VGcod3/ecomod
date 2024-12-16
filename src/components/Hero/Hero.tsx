@@ -7,24 +7,27 @@ import style from "./Hero.module.scss";
 import AnimationWrapper from "../Animations/AnimationWrapper";
 import { Phone } from "lucide-react";
 import useSmoothScrollTo from "@/utils/useSmoothScrollTo";
-
-const slogans = [
-  {
-    icon: "/innovative.svg",
-    text: "Інноваційно",
-  },
-  {
-    icon: "/recycle.svg",
-    text: "Екологічно",
-  },
-  {
-    icon: "/speedometer.svg",
-    text: "Швидко",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
   const handleScroll = useSmoothScrollTo();
+
+  const t = useTranslations();
+
+  const slogans = [
+    {
+      icon: "/innovative.svg",
+      text: "Інноваційно",
+    },
+    {
+      icon: "/recycle.svg",
+      text: "Екологічно",
+    },
+    {
+      icon: "/speedometer.svg",
+      text: "Швидко",
+    },
+  ];
 
   return (
     <>
@@ -49,25 +52,28 @@ const Hero = () => {
             </h1>
           </AnimationWrapper>
           <AnimationWrapper delay={0.3} duration={1} animationType="slideUp">
-            <p className="text-neutral-200 text-2xl max-w-64 sm:text-[3vw] leading-snug text-center sm:text-start">
-              Дім твого майбутнього
+            <p className="text-neutral-200 text-2xl max-w-70 sm:text-[3vw] leading-snug text-center sm:text-start">
+              {t("slogan")}
             </p>
           </AnimationWrapper>
         </div>
 
         <div className="col-span-4 sm:col-span-2 w-full h-full p-6 order-last sm:order-none flex flex-col lg:flex-row items-center gap-6 row-span-1">
           <button className={style.button}>
-            <Link href="tel:+380969588195" className="flex justify-center">
-              Зателефонувати
+            <Link
+              href="tel:+380969588195"
+              className="flex justify-center min-w-56"
+            >
+              {t("actions.call")}
               <Phone size={24} className="ml-2" />
             </Link>
           </button>
           <button
             style={{ backgroundColor: "transparent" }}
-            className={`${style.button} backdrop-blur-sm text-neutral-100 hover:text-my-cyan hover:border-my-cyan`}
+            className={`${style.button} backdrop-blur-sm text-neutral-100 hover:text-my-cyan hover:border-my-cyan min-w-56`}
             onClick={() => handleScroll("#innerPlanning")}
           >
-            Переглянути планування
+            {t("actions.see")}
           </button>
         </div>
 
@@ -86,7 +92,7 @@ const Hero = () => {
                     height={48}
                     width={48}
                   />
-                  <p>{slogan.text}</p>
+                  <p>{t(`features.list.${index}`)}</p>
                 </div>
               </AnimationWrapper>
             ))}

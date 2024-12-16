@@ -1,0 +1,137 @@
+{
+  "slogan": "The home of your future",
+  "nav": {
+    "whyUs": "Why us",
+    "planning": "Planning",
+    "forBusiness": "For business",
+    "faq": "FAQ"
+  },
+  "features": {
+    "list": ["Innovative", "Eco-friendly", "Fast"]
+  },
+  "actions": {
+    "call": "Call",
+    "see": "View planning"
+  },
+  "advantages": {
+    "title": "Advantages of a modular home",
+    "list": [
+      "no extra details. maximum simplicity and comfort",
+      "quality durable materials that are not afraid of any weather",
+      "mobility of the module, which will allow you to easily change the location",
+      "a cozy place to live and relax with a view of your choice"
+    ]
+  },
+  "whyUs": {
+    "title": "Why us?",
+    "description1": "Most of all, we value comfort, speed and ecology (cleanliness of the environment). These are the foundations of modern fast life anywhere in the world. With modular homes, you can be sure that everything you need will already be waiting inside. Opening the door to your new home and stepping over the threshold, you will open the door to the future today.",
+    "description2": "This is a great choice for people who value time and money. Dream housing in just 4 months.",
+    "features": [
+      {
+        "label": "Aesthetics",
+        "description": "Futuristic exterior and interior"
+      },
+      {
+        "label": "Mobility",
+        "description": "The requirement of the modern world"
+      },
+      {
+        "label": "Speed",
+        "description": "4 months for production"
+      },
+      {
+        "label": "Safety",
+        "description": "Smart home systems"
+      },
+      {
+        "label": "Quality",
+        "description": "The best materials and technologies"
+      }
+    ]
+  },
+  "inner": {
+    "title": "Interior planning",
+    "description": "The main thing that creates a cozy atmosphere in the house is its interior. Our houses are made in a luxury style and created for maximum comfort and functionality in every centimeter."
+  },
+  "business": {
+    "title": "For your business",
+    "subtitle": "ECOMOD is primarily about smart investments.",
+    "description1": "You don't waste time and energy on arranging a house. Our designers and engineers have thought of everything for you!",
+    "description2": "That's why ECOMOD is a quick start to your business.",
+    "action": "View projects"
+  },
+  "smartHouse": {
+    "title": "Smart home",
+    "list": [
+      {
+        "label": "Google Home",
+        "description": "Turn on the lights, adjust the thermostat, and get notified when a person or package arrives at your door."
+      },
+      {
+        "label": "Livolo Home",
+        "description": "Electric curtain control from Livolo Home. Open and close the curtains remotely using the mobile app or voice assistant."
+      },
+      {
+        "label": "Ledvans Smart",
+        "description": "The LEDVANCE SMART app allows you to control the lighting of a place remotely. It can also be integrated with Amazon Alexa and Google Assistant to control devices using voice commands."
+      },
+      {
+        "label": "Smart Life",
+        "description": "“Smart Life is a smart device management app that helps you control and manage your smart home devices more easily and live smarter. Smart Life is integrated with HealthKit and HomeKit."
+      }
+    ],
+    "dialog": {
+      "action": "View technologies",
+      "title": "List of technologies built into the smart home",
+      "list": [
+        "Electric curtains",
+        "Audio lamp with disco",
+        "Robot vacuum cleaner",
+        "Washing machine with drying function",
+        "Air conditioning",
+        "Built-in oven",
+        "Sensor and motion-sensing cooker hood",
+        "Built-in refrigerator",
+        "Flood sensor",
+        "Smoke detector, fire safety",
+        "Video surveillance",
+        "Electric stove",
+        "USB sockets",
+        "TV",
+        "Lighting in the cabinets",
+        "Transformer bed",
+        "Wardrobe-transformer"
+      ]
+    }
+  },
+  "planning": "Planning photos",
+  "installing": {
+    "title": "Installation",
+    "description": "After placing an order, we start assembling your house! It takes from 2 to 4 months. The assembly is carried out using the best latest technologies that make lightness, comfort and safety available. After manufacturing, we deliver the house and install it on the site"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Completely ready-made buildings make it easy to create a complex anywhere in Ukraine. This is what allows you to start your own business quickly. A hotel business, a complex of houses, or any other project becomes closer and more affordable with ECOMOD."
+  },
+  "faq": {
+    "title": "FAQ",
+    "list": [
+      {
+        "title": "Is the design possible according to my planning?",
+        "description": "No, the design is preserved in the main details. When placing an order, you can adjust the colors, add or remove some small interior elements."
+      },
+      {
+        "title": "Modular homes are only suitable for short-term stays? ",
+        "description": "No, modular houses are suitable for permanent residence. They have all the necessary communications and can also be equipped with autonomous heating and water supply systems."
+      },
+      {
+        "title": "The house is assembled right on the site?",
+        "description": "No, the house is assembled at the factory, then delivered to the site, and all communications are connected on site."
+      },
+      {
+        "title": "How long does it take to complete?",
+        "description": "It usually takes 2 to 4 months from the moment of signing the contract to commissioning. This period includes the production of the house, site preparation and installation."
+      }
+    ]
+  }
+}

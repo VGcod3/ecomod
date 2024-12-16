@@ -1,8 +1,9 @@
-import React, { ReactElement, useState } from "react";
+import React, { ReactElement } from "react";
 
 import * as Accordion from "@radix-ui/react-accordion";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import AnimationWrapper from "../Animations/AnimationWrapper";
+import { useTranslations } from "next-intl";
 
 type faqType = {
   title: string;
@@ -73,6 +74,8 @@ const AccordionContent = ({ description }: { description: string }) => (
 );
 
 const FAQ = () => {
+  const t = useTranslations("faq");
+
   return (
     <div
       className="flex flex-col min-h-screen w-full align-middle mt-20 justify-center relative gap-8"
@@ -98,8 +101,8 @@ const FAQ = () => {
             delay={0.4}
           >
             <AccordionItem value={i + ""}>
-              <AccordionTrigger heading={q.title} />
-              <AccordionContent description={q.description} />
+              <AccordionTrigger heading={t(`list.${i}.title`)} />
+              <AccordionContent description={t(`list.${i}.description`)} />
             </AccordionItem>
           </AnimationWrapper>
         ))}
