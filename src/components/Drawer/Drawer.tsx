@@ -105,7 +105,7 @@ export default function Drawer({
                         <FaInstagram className="social" />
                       </Link>
 
-                      <Link href="tel:+380969588195">
+                      <Link href="tel:+380669913454">
                         <FaPhone className="social" />
                       </Link>
 

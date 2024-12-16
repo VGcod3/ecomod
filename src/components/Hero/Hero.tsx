@@ -61,7 +61,7 @@ const Hero = () => {
         <div className="col-span-4 sm:col-span-2 w-full h-full p-6 order-last sm:order-none flex flex-col lg:flex-row items-center gap-6 row-span-1">
           <button className={style.button}>
             <Link
-              href="tel:+380969588195"
+              href="tel:+380669913454"
               className="flex justify-center min-w-56"
             >
               {t("actions.call")}

@@ -79,7 +79,7 @@ const Menu = () => {
           <FaInstagram className="social" />
         </Link>
 
-        <Link href="tel:+380969588195">
+        <Link href="tel:+380669913454">
           <FaPhone className="social" />
         </Link>
         <Link href={`${locale === "ua" ? "en" : "ua"}`}>
